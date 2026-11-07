@@ -1,0 +1,253 @@
+{
+  "run_id": "20261107T093100Z_603160db",
+  "ammeter_type": "entes",
+  "started_at_utc": "2026-11-07T09:30:50.973030+00:00",
+  "ended_at_utc": "2026-11-07T09:31:00.479350+00:00",
+  "config_snapshot": {
+    "config_file": "config/config.yaml",
+    "sampling": {
+      "measurements_count": 20,
+      "total_duration_seconds": 10.0,
+      "sampling_frequency_hz": 2.0
+    },
+    "timing": {
+      "overrun_tolerance_ratio": 0.5
+    },
+    "client": {
+      "connect_timeout_seconds": 2.0,
+      "read_timeout_seconds": 2.0,
+      "retries": 2,
+      "retry_backoff_seconds": 0.2,
+      "max_response_bytes": 4096,
+      "error_simulation": {
+        "enabled": false,
+        "mode": "wrong_command",
+        "probability": 0.2
+      }
+    },
+    "ammeter": {
+      "port": 5002,
+      "command": "MEASURE_ENTES -get_data"
+    }
+  },
+  "report": {
+    "status": "ok",
+    "statistics": {
+      "count": 20,
+      "mean": 61.87185798383389,
+      "median": 41.3503846278877,
+      "stdev": 46.37519662355609,
+      "min": 7.983829726181912,
+      "max": 144.1837352613502
+    },
+    "timing": {
+      "scheduled_samples": 20,
+      "successful_samples": 20,
+      "failed_samples": 0,
+      "slot_seconds": 0.5,
+      "max_start_lateness_ms": 5.059,
+      "mean_start_lateness_ms": 2.774,
+      "max_measurement_duration_ms": 2.269,
+      "overruns": 0,
+      "attempted_mean_interval_seconds": 0.5002243202057128,
+      "attempted_achieved_frequency_hz": 1.9991031215530641,
+      "attempted_interval_jitter_seconds": 0.0026553463873699246
+    },
+    "failed_samples": 0,
+    "sample_errors": [],
+    "values": [
+      44.92589522081687,
+      16.25614141583778,
+      30.29480732235755,
+      95.63984471480342,
+      61.13567647182285,
+      35.67778657881322,
+      63.91202498776028,
+      27.601778175317012,
+      35.606571112448435,
+      28.45382725053774,
+      7.983829726181912,
+      37.77487403495853,
+      53.72988893801923,
+      144.1837352613502,
+      107.75797687737098,
+      129.71928336541097,
+      22.561182739401083,
+      142.37025661831558,
+      15.80107355502552,
+      136.0507053101286
+    ],
+    "samples": [
+      {
+        "index": 0,
+        "scheduled_at_offset": 0.0,
+        "actual_at_offset": 1.9581057131290436e-06,
+        "duration_seconds": 0.0006819579284638166,
+        "value": 44.92589522081687,
+        "error": null
+      },
+      {
+        "index": 1,
+        "scheduled_at_offset": 0.5,
+        "actual_at_offset": 0.5050586671568453,
+        "duration_seconds": 0.001323833130300045,
+        "value": 16.25614141583778,
+        "error": null
+      },
+      {
+        "index": 2,
+        "scheduled_at_offset": 1.0,
+        "actual_at_offset": 1.0019957500044256,
+        "duration_seconds": 0.0010630409233272076,
+        "value": 30.29480732235755,
+        "error": null
+      },
+      {
+        "index": 3,
+        "scheduled_at_offset": 1.5,
+        "actual_at_offset": 1.5001032501459122,
+        "duration_seconds": 0.0008597499690949917,
+        "value": 95.63984471480342,
+        "error": null
+      },
+      {
+        "index": 4,
+        "scheduled_at_offset": 2.0,
+        "actual_at_offset": 2.0020007921848446,
+        "duration_seconds": 0.001485917018726468,
+        "value": 61.13567647182285,
+        "error": null
+      },
+      {
+        "index": 5,
+        "scheduled_at_offset": 2.5,
+        "actual_at_offset": 2.505058583104983,
+        "duration_seconds": 0.0016353749670088291,
+        "value": 35.67778657881322,
+        "error": null
+      },
+      {
+        "index": 6,
+        "scheduled_at_offset": 3.0,
+        "actual_at_offset": 3.00199304218404,
+        "duration_seconds": 0.0010631249751895666,
+        "value": 63.91202498776028,
+        "error": null
+      },
+      {
+        "index": 7,
+        "scheduled_at_offset": 3.5,
+        "actual_at_offset": 3.5041945001576096,
+        "duration_seconds": 0.0012418748810887337,
+        "value": 27.601778175317012,
+        "error": null
+      },
+      {
+        "index": 8,
+        "scheduled_at_offset": 4.0,
+        "actual_at_offset": 4.0025593331083655,
+        "duration_seconds": 0.0011053329799324274,
+        "value": 35.606571112448435,
+        "error": null
+      },
+      {
+        "index": 9,
+        "scheduled_at_offset": 4.5,
+        "actual_at_offset": 4.503719833213836,
+        "duration_seconds": 0.0017596250399947166,
+        "value": 28.45382725053774,
+        "error": null
+      },
+      {
+        "index": 10,
+        "scheduled_at_offset": 5.0,
+        "actual_at_offset": 5.0019822081085294,
+        "duration_seconds": 0.0009820838458836079,
+        "value": 7.983829726181912,
+        "error": null
+      },
+      {
+        "index": 11,
+        "scheduled_at_offset": 5.5,
+        "actual_at_offset": 5.502025667112321,
+        "duration_seconds": 0.0010275838430970907,
+        "value": 37.77487403495853,
+        "error": null
+      },
+      {
+        "index": 12,
+        "scheduled_at_offset": 6.0,
+        "actual_at_offset": 6.001956416992471,
+        "duration_seconds": 0.0012360408436506987,
+        "value": 53.72988893801923,
+        "error": null
+      },
+      {
+        "index": 13,
+        "scheduled_at_offset": 6.5,
+        "actual_at_offset": 6.502028958173469,
+        "duration_seconds": 0.0016221250407397747,
+        "value": 144.1837352613502,
+        "error": null
+      },
+      {
+        "index": 14,
+        "scheduled_at_offset": 7.0,
+        "actual_at_offset": 7.005054875044152,
+        "duration_seconds": 0.0012871669605374336,
+        "value": 107.75797687737098,
+        "error": null
+      },
+      {
+        "index": 15,
+        "scheduled_at_offset": 7.5,
+        "actual_at_offset": 7.504568375181407,
+        "duration_seconds": 0.0016577921342104673,
+        "value": 129.71928336541097,
+        "error": null
+      },
+      {
+        "index": 16,
+        "scheduled_at_offset": 8.0,
+        "actual_at_offset": 8.00193054205738,
+        "duration_seconds": 0.0013965419493615627,
+        "value": 22.561182739401083,
+        "error": null
+      },
+      {
+        "index": 17,
+        "scheduled_at_offset": 8.5,
+        "actual_at_offset": 8.5045536251273,
+        "duration_seconds": 0.001424458110705018,
+        "value": 142.37025661831558,
+        "error": null
+      },
+      {
+        "index": 18,
+        "scheduled_at_offset": 9.0,
+        "actual_at_offset": 9.000420208089054,
+        "duration_seconds": 0.002268583048135042,
+        "value": 15.80107355502552,
+        "error": null
+      },
+      {
+        "index": 19,
+        "scheduled_at_offset": 9.5,
+        "actual_at_offset": 9.504264042014256,
+        "duration_seconds": 0.0018367089796811342,
+        "value": 136.0507053101286,
+        "error": null
+      }
+    ],
+    "accuracy_assessment": {
+      "ammeter_type": "entes",
+      "status": "descriptive_comparison",
+      "documented_model": "I = B*K, B~U[0.01,0.1], K~U[500,2000]",
+      "theoretical_expected_mean": 68.75,
+      "empirical_mean": 61.871858,
+      "deviation_pct": 10.0,
+      "sample_count": 20,
+      "limitation": "No shared reference current exists: each ammeter generates its own random inputs per call, so cross-device accuracy cannot be determined from this API, and output spread reflects the randomized inputs rather than device repeatability. No device is ranked as 'most accurate'. The comparison below is descriptive only and makes no inferential claim: the empirical mean is itself random and agreement with the documented model is expected only in probability as the sample count grows."
+    }
+  }
+}

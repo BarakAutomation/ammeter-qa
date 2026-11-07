@@ -1,0 +1,3 @@
+2026-11-07 11:30:41,085 [INFO] starting run: 20 samples at 2.0 Hz from greenlee (port 5001)
+2026-11-07 11:30:50,592 [INFO] run 20261107T093050Z_3593192f archived: mean=0.1588A, failures=0
+2026-11-07 11:30:50,972 [INFO] plot saved to results/plots/20261107T093050Z_3593192f_greenlee.png

@@ -1,0 +1,47 @@
+testing:
+  sampling:
+    # Exactly two of the three may be set independently; the third is derived.
+    # If all three are set they must be consistent:
+    #   measurements_count == round(total_duration_seconds * sampling_frequency_hz)
+    # otherwise the run fails fast with a configuration error.
+    measurements_count: 20
+    total_duration_seconds: 10
+    sampling_frequency_hz: 2
+  timing:
+    # A sample later than this fraction of its slot is reported as an overrun.
+    overrun_tolerance_ratio: 0.5
+  client:
+    connect_timeout_seconds: 2.0
+    read_timeout_seconds: 2.0
+    retries: 2
+    retry_backoff_seconds: 0.2
+  error_simulation:
+    # Bonus: client-side fault injection, to exercise the error handling.
+    # Modes: wrong_command | connection_refused | drop_response
+    enabled: false
+    mode: "wrong_command"
+    probability: 0.2
+
+ammeters:
+  # Fix #2/#3: ports and commands match the running emulators (see DESIGN_DECISIONS.md).
+  greenlee:
+    port: 5001
+    command: "MEASURE_GREENLEE -get_measurement"
+  entes:
+    port: 5002
+    command: "MEASURE_ENTES -get_data"
+  circutor:
+    port: 5003
+    command: "MEASURE_CIRCUTOR -get_measurement -current"
+
+analysis:
+  accuracy_assessment:
+    enabled: true
+  visualization:
+    enabled: true
+    plot_types: [time_series, comparison]
+
+result_management:
+  results_dir: "results/runs"
+  plots_dir: "results/plots"
+  logs_dir: "results/logs"

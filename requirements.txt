@@ -1,0 +1,5 @@
+# Minimal dependency set (see DESIGN_DECISIONS.md):
+# statistics are computed with the Python standard library, so numpy / scipy /
+# pandas / seaborn are not required.
+pyyaml>=6.0       # configuration files
+matplotlib>=3.4.0 # bonus visualization only

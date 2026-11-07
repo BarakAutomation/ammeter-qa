@@ -1,0 +1,253 @@
+{
+  "run_id": "20261107T093050Z_3593192f",
+  "ammeter_type": "greenlee",
+  "started_at_utc": "2026-11-07T09:30:41.085251+00:00",
+  "ended_at_utc": "2026-11-07T09:30:50.589699+00:00",
+  "config_snapshot": {
+    "config_file": "config/config.yaml",
+    "sampling": {
+      "measurements_count": 20,
+      "total_duration_seconds": 10.0,
+      "sampling_frequency_hz": 2.0
+    },
+    "timing": {
+      "overrun_tolerance_ratio": 0.5
+    },
+    "client": {
+      "connect_timeout_seconds": 2.0,
+      "read_timeout_seconds": 2.0,
+      "retries": 2,
+      "retry_backoff_seconds": 0.2,
+      "max_response_bytes": 4096,
+      "error_simulation": {
+        "enabled": false,
+        "mode": "wrong_command",
+        "probability": 0.2
+      }
+    },
+    "ammeter": {
+      "port": 5001,
+      "command": "MEASURE_GREENLEE -get_measurement"
+    }
+  },
+  "report": {
+    "status": "ok",
+    "statistics": {
+      "count": 20,
+      "mean": 0.15877513602870458,
+      "median": 0.11592718987528969,
+      "stdev": 0.17521901945690316,
+      "min": 0.030307725803922173,
+      "max": 0.7793432259612277
+    },
+    "timing": {
+      "scheduled_samples": 20,
+      "successful_samples": 20,
+      "failed_samples": 0,
+      "slot_seconds": 0.5,
+      "max_start_lateness_ms": 5.069,
+      "mean_start_lateness_ms": 3.282,
+      "max_measurement_duration_ms": 2.62,
+      "overruns": 0,
+      "attempted_mean_interval_seconds": 0.5001404670949438,
+      "attempted_achieved_frequency_hz": 1.9994382894239306,
+      "attempted_interval_jitter_seconds": 0.0022638962768750694
+    },
+    "failed_samples": 0,
+    "sample_errors": [],
+    "values": [
+      0.03942181396716216,
+      0.18807394018413834,
+      0.14701741831061751,
+      0.04269239220471601,
+      0.059564950010276944,
+      0.2276091920355469,
+      0.7793432259612277,
+      0.15520959632102732,
+      0.09047295008489248,
+      0.035129270799223955,
+      0.033693680350497454,
+      0.4081827708377268,
+      0.13057567452424707,
+      0.13406544889330846,
+      0.03803207566836038,
+      0.23997531833276822,
+      0.23248318968110498,
+      0.062373381376994226,
+      0.030307725803922173,
+      0.10127870522633231
+    ],
+    "samples": [
+      {
+        "index": 0,
+        "scheduled_at_offset": 0.0,
+        "actual_at_offset": 1.666136085987091e-06,
+        "duration_seconds": 0.002620000159367919,
+        "value": 0.03942181396716216,
+        "error": null
+      },
+      {
+        "index": 1,
+        "scheduled_at_offset": 0.5,
+        "actual_at_offset": 0.5030392501503229,
+        "duration_seconds": 0.0020340827759355307,
+        "value": 0.18807394018413834,
+        "error": null
+      },
+      {
+        "index": 2,
+        "scheduled_at_offset": 1.0,
+        "actual_at_offset": 1.0043708749581128,
+        "duration_seconds": 0.0010921661742031574,
+        "value": 0.14701741831061751,
+        "error": null
+      },
+      {
+        "index": 3,
+        "scheduled_at_offset": 1.5,
+        "actual_at_offset": 1.5050463750958443,
+        "duration_seconds": 0.0013553330209106207,
+        "value": 0.04269239220471601,
+        "error": null
+      },
+      {
+        "index": 4,
+        "scheduled_at_offset": 2.0,
+        "actual_at_offset": 2.0048312910366803,
+        "duration_seconds": 0.0011404159013181925,
+        "value": 0.059564950010276944,
+        "error": null
+      },
+      {
+        "index": 5,
+        "scheduled_at_offset": 2.5,
+        "actual_at_offset": 2.5002026660367846,
+        "duration_seconds": 0.0015092079993337393,
+        "value": 0.2276091920355469,
+        "error": null
+      },
+      {
+        "index": 6,
+        "scheduled_at_offset": 3.0,
+        "actual_at_offset": 3.0032410831190646,
+        "duration_seconds": 0.0012277921196073294,
+        "value": 0.7793432259612277,
+        "error": null
+      },
+      {
+        "index": 7,
+        "scheduled_at_offset": 3.5,
+        "actual_at_offset": 3.503323000157252,
+        "duration_seconds": 0.00188045809045434,
+        "value": 0.15520959632102732,
+        "error": null
+      },
+      {
+        "index": 8,
+        "scheduled_at_offset": 4.0,
+        "actual_at_offset": 4.003471333067864,
+        "duration_seconds": 0.0011392501182854176,
+        "value": 0.09047295008489248,
+        "error": null
+      },
+      {
+        "index": 9,
+        "scheduled_at_offset": 4.5,
+        "actual_at_offset": 4.501095875166357,
+        "duration_seconds": 0.0012095838319510221,
+        "value": 0.035129270799223955,
+        "error": null
+      },
+      {
+        "index": 10,
+        "scheduled_at_offset": 5.0,
+        "actual_at_offset": 5.004484249977395,
+        "duration_seconds": 0.0015409172046929598,
+        "value": 0.033693680350497454,
+        "error": null
+      },
+      {
+        "index": 11,
+        "scheduled_at_offset": 5.5,
+        "actual_at_offset": 5.501142833149061,
+        "duration_seconds": 0.0012621250934898853,
+        "value": 0.4081827708377268,
+        "error": null
+      },
+      {
+        "index": 12,
+        "scheduled_at_offset": 6.0,
+        "actual_at_offset": 6.005068958038464,
+        "duration_seconds": 0.0007944169919937849,
+        "value": 0.13057567452424707,
+        "error": null
+      },
+      {
+        "index": 13,
+        "scheduled_at_offset": 6.5,
+        "actual_at_offset": 6.50504425005056,
+        "duration_seconds": 0.0015411670319736004,
+        "value": 0.13406544889330846,
+        "error": null
+      },
+      {
+        "index": 14,
+        "scheduled_at_offset": 7.0,
+        "actual_at_offset": 7.003738291095942,
+        "duration_seconds": 0.0009956250432878733,
+        "value": 0.03803207566836038,
+        "error": null
+      },
+      {
+        "index": 15,
+        "scheduled_at_offset": 7.5,
+        "actual_at_offset": 7.50364595814608,
+        "duration_seconds": 0.0015133330598473549,
+        "value": 0.23997531833276822,
+        "error": null
+      },
+      {
+        "index": 16,
+        "scheduled_at_offset": 8.0,
+        "actual_at_offset": 8.00362337497063,
+        "duration_seconds": 0.0016151249874383211,
+        "value": 0.23248318968110498,
+        "error": null
+      },
+      {
+        "index": 17,
+        "scheduled_at_offset": 8.5,
+        "actual_at_offset": 8.503157082945108,
+        "duration_seconds": 0.0014533749781548977,
+        "value": 0.062373381376994226,
+        "error": null
+      },
+      {
+        "index": 18,
+        "scheduled_at_offset": 9.0,
+        "actual_at_offset": 9.004444665974006,
+        "duration_seconds": 0.0016238330863416195,
+        "value": 0.030307725803922173,
+        "error": null
+      },
+      {
+        "index": 19,
+        "scheduled_at_offset": 9.5,
+        "actual_at_offset": 9.502670540940017,
+        "duration_seconds": 0.0013607919681817293,
+        "value": 0.10127870522633231,
+        "error": null
+      }
+    ],
+    "accuracy_assessment": {
+      "ammeter_type": "greenlee",
+      "status": "descriptive_comparison",
+      "documented_model": "I = V/R, V~U[1,10], R~U[0.1,100]",
+      "theoretical_expected_mean": 0.380325,
+      "empirical_mean": 0.158775,
+      "deviation_pct": 58.25,
+      "sample_count": 20,
+      "limitation": "No shared reference current exists: each ammeter generates its own random inputs per call, so cross-device accuracy cannot be determined from this API, and output spread reflects the randomized inputs rather than device repeatability. No device is ranked as 'most accurate'. The comparison below is descriptive only and makes no inferential claim: the empirical mean is itself random and agreement with the documented model is expected only in probability as the sample count grows."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+2026-11-07 11:30:41,085 [INFO] starting run: 20 samples at 2.0 Hz from greenlee (port 5001)
+2026-11-07 11:30:50,592 [INFO] run 20261107T093050Z_3593192f archived: mean=0.1588A, failures=0
+2026-11-07 11:30:50,972 [INFO] plot saved to results/plots/20261107T093050Z_3593192f_greenlee.png
+2026-11-07 11:30:50,972 [INFO] starting run: 20 samples at 2.0 Hz from entes (port 5002)
+2026-11-07 11:31:00,482 [INFO] run 20261107T093100Z_603160db archived: mean=61.8719A, failures=0
+2026-11-07 11:31:00,556 [INFO] plot saved to results/plots/20261107T093100Z_603160db_entes.png
+2026-11-07 11:31:00,556 [INFO] starting run: 20 samples at 2.0 Hz from circutor (port 5003)
+2026-11-07 11:31:10,063 [INFO] run 20261107T093110Z_7eeff15f archived: mean=0.0367A, failures=0
+2026-11-07 11:31:10,120 [INFO] plot saved to results/plots/20261107T093110Z_7eeff15f_circutor.png
+
+=== Testing greenlee ===
+samples=20 failed=0 mean=0.1588A median=0.1159A stdev=0.1752 min=0.0303 max=0.7793
+attempted mean interval=0.500140s (achieved 1.9994 Hz), max start lateness=5.069 ms, overruns=0
+documented-model comparison (descriptive): empirical mean 0.158775A vs theoretical 0.380325A (58.25% deviation, n=20)
+
+=== Testing entes ===
+samples=20 failed=0 mean=61.8719A median=41.3504A stdev=46.3752 min=7.9838 max=144.1837
+attempted mean interval=0.500224s (achieved 1.9991 Hz), max start lateness=5.059 ms, overruns=0
+documented-model comparison (descriptive): empirical mean 61.871858A vs theoretical 68.75A (10.0% deviation, n=20)
+
+=== Testing circutor ===
+samples=20 failed=0 mean=0.0367A median=0.0398A stdev=0.0153 min=0.0089 max=0.0575
+attempted mean interval=0.500264s (achieved 1.9989 Hz), max start lateness=5.043 ms, overruns=0
+documented-model comparison (descriptive): empirical mean 0.036677A vs theoretical 0.03025A (21.25% deviation, n=20)
+
+=== Comparison across ammeters ===
+ greenlee: mean=0.1588A median=0.1159A stdev=0.1752
+    entes: mean=61.8719A median=41.3504A stdev=46.3752
+ circutor: mean=0.0367A median=0.0398A stdev=0.0153
+
+Note: ranges differ by orders of magnitude by design (each device simulates a different physical setup). See the accuracy_assessment limitation in each run's report - no device-accuracy ranking is made.
+
+comparison plot saved to results/plots/ammeter_comparison.png
